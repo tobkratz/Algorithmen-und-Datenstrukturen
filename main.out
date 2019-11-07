@@ -1,0 +1,144 @@
+\BOOKMARK [1][-]{section*.2}{Allgemein Algorithmen}{}% 1
+\BOOKMARK [2][-]{section*.3}{Probleme der Informatik}{section*.2}% 2
+\BOOKMARK [2][-]{section*.4}{Aufgaben und Eigenschaften eines Algorithmus}{section*.2}% 3
+\BOOKMARK [2][-]{section*.5}{Effizienz von Algorithmen}{section*.2}% 4
+\BOOKMARK [1][-]{section*.6}{Sortieralgorithmen}{}% 5
+\BOOKMARK [2][-]{section*.7}{Das Sortierproblem}{section*.6}% 6
+\BOOKMARK [2][-]{section*.8}{Vergleichbarkeiten von Algorithmen}{section*.6}% 7
+\BOOKMARK [2][-]{section*.9}{Korrektheit}{section*.6}% 8
+\BOOKMARK [2][-]{section*.10}{Laufzeiten}{section*.6}% 9
+\BOOKMARK [3][-]{section*.11}{Komplexit\344t}{section*.10}% 10
+\BOOKMARK [3][-]{section*.13}{Asymptotische Notationen}{section*.10}% 11
+\BOOKMARK [3][-]{section*.14}{-Notation}{section*.10}% 12
+\BOOKMARK [3][-]{section*.15}{O-Notation}{section*.10}% 13
+\BOOKMARK [3][-]{section*.16}{-Notation}{section*.10}% 14
+\BOOKMARK [3][-]{section*.17}{Komplexit\344tsklassen}{section*.10}% 15
+\BOOKMARK [3][-]{section*.19}{o-Notation und -Notation}{section*.10}% 16
+\BOOKMARK [2][-]{section*.20}{Divide-and-Conquer}{section*.6}% 17
+\BOOKMARK [2][-]{section*.21}{L\366sung von Rekusionsgleichungen}{section*.6}% 18
+\BOOKMARK [3][-]{section*.22}{Substitutionsmethode}{section*.21}% 19
+\BOOKMARK [3][-]{section*.23}{Rekursionsbaum-Methode}{section*.21}% 20
+\BOOKMARK [3][-]{section*.24}{Mastermethode}{section*.21}% 21
+\BOOKMARK [3][-]{section*.25}{Mastertheorem}{section*.21}% 22
+\BOOKMARK [2][-]{section*.26}{Insertion Sort}{section*.6}% 23
+\BOOKMARK [3][-]{section*.27}{Kurzbeschreibung}{section*.26}% 24
+\BOOKMARK [3][-]{section*.28}{Pseudo Code}{section*.26}% 25
+\BOOKMARK [3][-]{section*.29}{Korrektheit von Insertion Sort}{section*.26}% 26
+\BOOKMARK [3][-]{section*.31}{Laufzeit}{section*.26}% 27
+\BOOKMARK [2][-]{section*.32}{Bubble Sort}{section*.6}% 28
+\BOOKMARK [3][-]{section*.33}{Kurzbeschreibung}{section*.32}% 29
+\BOOKMARK [3][-]{section*.34}{Pseudo Code}{section*.32}% 30
+\BOOKMARK [3][-]{section*.35}{Laufzeit}{section*.32}% 31
+\BOOKMARK [2][-]{section*.36}{Merge Sort}{section*.6}% 32
+\BOOKMARK [3][-]{section*.37}{Kurzbeschreibung}{section*.36}% 33
+\BOOKMARK [3][-]{section*.38}{Pseudo Code}{section*.36}% 34
+\BOOKMARK [3][-]{section*.39}{Laufzeit}{section*.36}% 35
+\BOOKMARK [3][-]{section*.40}{Korrektheit}{section*.36}% 36
+\BOOKMARK [3][-]{section*.41}{Analyse}{section*.36}% 37
+\BOOKMARK [2][-]{section*.42}{Quicksort}{section*.6}% 38
+\BOOKMARK [3][-]{section*.43}{Kurzbeschreibung}{section*.42}% 39
+\BOOKMARK [3][-]{section*.44}{Pseudo Code}{section*.42}% 40
+\BOOKMARK [3][-]{section*.45}{Laufzeit}{section*.42}% 41
+\BOOKMARK [3][-]{section*.46}{Korrektheit}{section*.42}% 42
+\BOOKMARK [3][-]{section*.47}{Randomized QS}{section*.42}% 43
+\BOOKMARK [1][-]{section*.48}{Grundlegende Datenstrukturen}{}% 44
+\BOOKMARK [2][-]{section*.49}{Abstrakte Datentypen und Datenstrukturen}{section*.48}% 45
+\BOOKMARK [2][-]{section*.50}{Stack}{section*.48}% 46
+\BOOKMARK [3][-]{section*.51}{Laufzeiten}{section*.50}% 47
+\BOOKMARK [3][-]{section*.52}{Realisierungen}{section*.50}% 48
+\BOOKMARK [2][-]{section*.53}{Verkette Listen}{section*.48}% 49
+\BOOKMARK [3][-]{section*.54}{Laufzeiten}{section*.53}% 50
+\BOOKMARK [3][-]{section*.55}{Realisierungen}{section*.53}% 51
+\BOOKMARK [2][-]{section*.57}{Abstrakter Datentyp Queue}{section*.48}% 52
+\BOOKMARK [3][-]{section*.58}{Laufzeiten}{section*.57}% 53
+\BOOKMARK [3][-]{section*.59}{Realisierungen}{section*.57}% 54
+\BOOKMARK [2][-]{section*.60}{Bin\344r B\344ume}{section*.48}% 55
+\BOOKMARK [3][-]{section*.61}{Realisierung}{section*.60}% 56
+\BOOKMARK [3][-]{section*.62}{Inorder-Traversieren}{section*.60}% 57
+\BOOKMARK [3][-]{section*.63}{Pre- und Postorder-Traversieren}{section*.60}% 58
+\BOOKMARK [3][-]{section*.64}{Suche}{section*.60}% 59
+\BOOKMARK [3][-]{section*.65}{Einf\374gen}{section*.60}% 60
+\BOOKMARK [2][-]{section*.66}{L\366schen}{section*.48}% 61
+\BOOKMARK [2][-]{section*.67}{Bin\344re Suchb\344ume}{section*.48}% 62
+\BOOKMARK [1][-]{section*.68}{Erweiterte Datenstrukturen}{}% 63
+\BOOKMARK [2][-]{section*.69}{Rot-Schwarz-B\344ume}{section*.68}% 64
+\BOOKMARK [3][-]{section*.70}{Eigenschaften}{section*.69}% 65
+\BOOKMARK [3][-]{section*.71}{Schwarzh\366he}{section*.69}% 66
+\BOOKMARK [3][-]{section*.72}{Einf\374gen}{section*.69}% 67
+\BOOKMARK [3][-]{section*.73}{Laufzeiten}{section*.69}% 68
+\BOOKMARK [2][-]{section*.75}{AVL-B\344ume}{section*.68}% 69
+\BOOKMARK [3][-]{section*.76}{Laufzeiten}{section*.75}% 70
+\BOOKMARK [3][-]{section*.77}{Einf\374gen}{section*.75}% 71
+\BOOKMARK [3][-]{section*.78}{L\366schen }{section*.75}% 72
+\BOOKMARK [3][-]{section*.79}{Rebalance}{section*.75}% 73
+\BOOKMARK [2][-]{section*.80}{Splay-B\344ume}{section*.68}% 74
+\BOOKMARK [3][-]{section*.81}{Splay-Methode}{section*.80}% 75
+\BOOKMARK [3][-]{section*.82}{Suchen}{section*.80}% 76
+\BOOKMARK [3][-]{section*.83}{Einf\374gen}{section*.80}% 77
+\BOOKMARK [3][-]{section*.84}{L\366schen}{section*.80}% 78
+\BOOKMARK [2][-]{section*.85}{Heaps}{section*.68}% 79
+\BOOKMARK [3][-]{section*.86}{\(Bin\344re Max-\) Heaps}{section*.85}% 80
+\BOOKMARK [3][-]{section*.87}{Heaps als Array}{section*.85}% 81
+\BOOKMARK [3][-]{section*.88}{Einf\374gen}{section*.85}% 82
+\BOOKMARK [3][-]{section*.89}{Wurzel L\366schen}{section*.85}% 83
+\BOOKMARK [3][-]{section*.90}{Heap-Konstruktion}{section*.85}% 84
+\BOOKMARK [3][-]{section*.91}{Heap-Sort}{section*.85}% 85
+\BOOKMARK [2][-]{section*.92}{B-B\344ume}{section*.68}% 86
+\BOOKMARK [3][-]{section*.93}{Darstellung}{section*.92}% 87
+\BOOKMARK [3][-]{section*.94}{Suche}{section*.92}% 88
+\BOOKMARK [3][-]{section*.95}{Einf\374gen}{section*.92}% 89
+\BOOKMARK [3][-]{section*.96}{L\366schen}{section*.92}% 90
+\BOOKMARK [3][-]{section*.97}{Zusammenfassung}{section*.92}% 91
+\BOOKMARK [1][-]{section*.98}{Zuf\344llige Datenstrukturen}{}% 92
+\BOOKMARK [2][-]{section*.99}{Skip List}{section*.98}% 93
+\BOOKMARK [2][-]{section*.100}{Hash Tables}{section*.98}% 94
+\BOOKMARK [1][-]{section*.101}{Erweiterte Strukturen}{}% 95
+\BOOKMARK [2][-]{section*.102}{Dynamische Programmierung}{section*.101}% 96
+\BOOKMARK [2][-]{section*.103}{Stabzerlegungsproblem}{section*.101}% 97
+\BOOKMARK [3][-]{section*.105}{L\366sung}{section*.103}% 98
+\BOOKMARK [2][-]{section*.106}{Greedy-Algorythmus}{section*.101}% 99
+\BOOKMARK [2][-]{section*.107}{Damenproblem}{section*.101}% 100
+\BOOKMARK [2][-]{section*.108}{Heuristiken}{section*.101}% 101
+\BOOKMARK [2][-]{section*.109}{Bergsteigeralgorithmus}{section*.101}% 102
+\BOOKMARK [2][-]{section*.110}{Iterative Lokale Suche}{section*.101}% 103
+\BOOKMARK [2][-]{section*.111}{Simulated Annealing}{section*.101}% 104
+\BOOKMARK [2][-]{section*.112}{Tabu Search}{section*.101}% 105
+\BOOKMARK [2][-]{section*.113}{Populations-basierte Methode}{section*.101}% 106
+\BOOKMARK [2][-]{section*.114}{Evolution\344rer Algorithmus}{section*.101}% 107
+\BOOKMARK [3][-]{section*.115}{Evolution\344res}{section*.114}% 108
+\BOOKMARK [2][-]{section*.116}{Evolutionsstrategien}{section*.101}% 109
+\BOOKMARK [2][-]{section*.117}{Amortisierte Analyse}{section*.101}% 110
+\BOOKMARK [1][-]{section*.118}{Graphen}{}% 111
+\BOOKMARK [2][-]{section*.119}{\(Endliche\) Gerichtete Graphen}{section*.118}% 112
+\BOOKMARK [2][-]{section*.120}{Ungerichteter Graph}{section*.118}% 113
+\BOOKMARK [2][-]{section*.121}{Darstellung}{section*.118}% 114
+\BOOKMARK [3][-]{section*.122}{als Adjazenzmatrix}{section*.121}% 115
+\BOOKMARK [3][-]{section*.123}{als Adjazenzliste}{section*.121}% 116
+\BOOKMARK [2][-]{section*.124}{Gewichtete Graphen}{section*.118}% 117
+\BOOKMARK [2][-]{section*.125}{Search-Methoden}{section*.118}% 118
+\BOOKMARK [3][-]{section*.126}{BFS Breadth-First-Search}{section*.125}% 119
+\BOOKMARK [3][-]{section*.127}{DFS Depth-First-Search}{section*.125}% 120
+\BOOKMARK [2][-]{section*.128}{Anwendung von DFS}{section*.118}% 121
+\BOOKMARK [3][-]{section*.129}{Topologisches Sortieren}{section*.128}% 122
+\BOOKMARK [3][-]{section*.130}{Starke Zusammenhangskomponenten}{section*.128}% 123
+\BOOKMARK [2][-]{section*.131}{Minimale Spannb\344ume MST}{section*.118}% 124
+\BOOKMARK [3][-]{section*.132}{Generische Methode}{section*.131}% 125
+\BOOKMARK [3][-]{section*.133}{Korrektheit}{section*.131}% 126
+\BOOKMARK [3][-]{section*.134}{Terminologie}{section*.131}% 127
+\BOOKMARK [2][-]{section*.135}{Algorithmus von Kruskal}{section*.118}% 128
+\BOOKMARK [3][-]{section*.136}{Korrektheit}{section*.135}% 129
+\BOOKMARK [2][-]{section*.137}{Algorithmus von Prim}{section*.118}% 130
+\BOOKMARK [3][-]{section*.139}{Korrektheit}{section*.137}% 131
+\BOOKMARK [2][-]{section*.140}{K\374rzester Weg,gerichteter Graph}{section*.118}% 132
+\BOOKMARK [3][-]{section*.141}{SSSP}{section*.140}% 133
+\BOOKMARK [3][-]{section*.142}{Lockerung bzw. Relax}{section*.140}% 134
+\BOOKMARK [3][-]{section*.143}{Bellman Ford Algorithmus}{section*.140}% 135
+\BOOKMARK [3][-]{section*.144}{TOPO-Sort}{section*.140}% 136
+\BOOKMARK [3][-]{section*.145}{Dijkstra-Algorithmus}{section*.140}% 137
+\BOOKMARK [2][-]{section*.146}{Maximaler Fluss in Graphen}{section*.118}% 138
+\BOOKMARK [3][-]{section*.147}{Netzwerkfl\374sse}{section*.146}% 139
+\BOOKMARK [3][-]{section*.148}{Transformationen}{section*.146}% 140
+\BOOKMARK [3][-]{section*.149}{Ford-Fulkerson-Methode}{section*.146}% 141
+\BOOKMARK [3][-]{section*.150}{Reste}{section*.146}% 142
+\BOOKMARK [1][-]{section*.152}{NP}{}% 143
+\BOOKMARK [1][-]{section*.153}{Logarithmus-Gesetze}{}% 144
