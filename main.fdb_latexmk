@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1573152637 "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.tex" "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.pdf" "main" 1573152637
-  "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.aux" 1573152637 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.tex" 1573152635 89745 e14a0dbe7250f6371a55ad44b231afd6 ""
+["pdflatex"] 1573153014 "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.tex" "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.pdf" "main" 1573153014
+  "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.aux" 1573153014 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.tex" 1573153012 89745 e14a0dbe7250f6371a55ad44b231afd6 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1572595918 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1572595918 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -200,12 +200,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1573152460 8044939 15d4c622e9041b68eae483a9042366a5 ""
   "main.aux" 0 -1 0 "pdflatex"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1573152635 89745 e14a0dbe7250f6371a55ad44b231afd6 ""
+  "main.tex" 1573153012 89745 e14a0dbe7250f6371a55ad44b231afd6 ""
   (generated)
-  "main.toc"
+  "main.pdf"
   "main.out"
+  "main.toc"
   "main.aux"
   "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.pdf"
   "/home/tk/GitHub/Algorithmen-und-Datenstrukturen/main.log"
-  "main.pdf"
   "main.log"
