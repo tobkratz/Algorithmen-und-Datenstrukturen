@@ -19,40 +19,39 @@
 \shorttitle{AUD Merkblatt}
 
 \threeauthors{Tobias Kratz}{Marius Glock}{Vu Do Le}
+\threeaffiliations{Student TU-DA}{Student TU-DA}{Student TU-DA}
 
-\abstract{Merkblatt für Algorithmen und Datenstrukturen im Sommersemester 2019 der TU Darmstadt}
+\abstract{Ein Merkblatt zu der Vorlesung Algorithemen und Datenstrukturen (ehemals GdI 2) im Sommersemester 2019 der TU Darmstadt, zusammengestellt mit Hilfe der Folien von Prof. Dr. phil. nat. Marc Fischlin}
 
 \leftheader{AUD Merkblatt}
 
 \begin{document}
+
 \maketitle    
 \tableofcontents 
 
-\\
-\\
 \section{Allgemein Algorithmen}
 
 \subsection{Probleme der Informatik}
-Ein \bfseries Problem \normalfont in der Informatik enthält eine Beschreibung der Ein-& Ausgabe aber keinen Übergang. \itshape Ein Beispiel wäre, sortiere die Menge an Wörtern \normalfont
+Ein \bfseries Problem \normalfont in der Informatik enthält eine Beschreibung der Ein-\& Ausgabe aber keinen Übergang. \itshape Ein Beispiel wäre, sortiere die Menge an Wörtern \normalfont
 
-Eine \bfseries Probleminstanz \normalfont ist ein spezifiziertes Problem mit konkreter Belegung der Eingabe, in der eine Entsprechende Ausgabe erwünscht ist. {\itshape Bsp.: Berechne x=23²}
+Eine \bfseries Probleminstanz \normalfont ist ein spezifiziertes Problem mit konkreter Belegung der Eingabe, in der eine Entsprechende Ausgabe erwünscht ist. {\itshape Bsp.: Berechne $x=23^2$}
 
 \begin{quote}
     »Ein Algorithmus ist eine {\bfseries endliche Sequenz} von Handlungsvorschriften, die eine {\bfseries Eingabe} in eine {\bfseries Ausgabe} transformiert.«\footnote{Corm et al.,2009}
 \end{quote}
 
 \subsection{Aufgaben und Eigenschaften eines Algorithmus}
-Ein Algorithmus soll
+Ein Algorithmus hat die Folgenden Eigentschaften:
 \begin{itemize}
 \item Endlich: Die Notation hat eine endliche Länge
 \item Eindeutig: Jeder Einzelschritt ist klar definiert und ausführbar. Die Reihenfolge der Einzelschritte ist festgelegt. 
-\item Spezifizierung der Ein- & Ausgabe: Anzahl und Typen aller Elemente ist definiert.
+\item Spezifizierung der Ein- \& Ausgabe: Anzahl und Typen aller Elemente ist definiert.
 \end{itemize}
-\\
 Weiterhin kann ein Algorithmus folgende Eigenschaften haben 
 \begin{itemize}
 \item Determiniertheit: Für die gleiche Eingabe immer die gleiche Ausgabe berechnet
-\item Determinismus: Für die gleiche Eingabe ist die Ausführung und die die Ausgabe stets identisch
+\item Determinismus: Für die gleiche Eingabe ist die Ausführung und die Ausgabe stets identisch
 \item Terminierung: Der Algorithmus läuft für jede Eingabe nur endlich lange
 \item Korrektheit: Der Algorithmus berechnet stets die spezifizierte Ausgabe (falls diese terminiert)
 \item Effizienz: Sparsamkeit im Ressourcenverbrauch (Zeit, Speicher...)
@@ -60,7 +59,7 @@ Weiterhin kann ein Algorithmus folgende Eigenschaften haben
 
 \subsection{Effizienz von Algorithmen}
 \begin{itemize}
-    \item Effizienzfaktoren 
+    \item Effizienzfaktoren: 
     \begin{itemize}
         \item Rechenzeit (Anzahl der Einzelschritte)
         \item Kommunikationsaufwand (z.B. Netzwerk)
@@ -68,7 +67,7 @@ Weiterhin kann ein Algorithmus folgende Eigenschaften haben
         \item Zugriff auf Speicher (z.B. Festplatte)
     \end{itemize}
     
-    \item Laufzeit hängt von verschiedenen Faktoren ab
+    \item Laufzeit hängt von verschiedenen Faktoren ab:
     \begin{itemize}
         \item Länge der Eingabe
         \item Implementierung der Basisoperationen
@@ -81,7 +80,7 @@ Weiterhin kann ein Algorithmus folgende Eigenschaften haben
 
 \subsection{Das Sortierproblem}
 Zu Sortierende Elemente auch Schlüsselwerte. \\
-Bedingung zum Sortieren: Schlüsselwerte müssen verglichbar sein. \\
+Müssen verglichbar sein, um sotiert werden zu können. \\
 Eingabe eine Sequenz von Schlüsselwerten <a1, a2, ..., an> \\
 Ausgabe : Permutation <a1', a2’, ..., an’> mit z.B. der Eigentschaft a1’ <= a2’ <= a3’ <= .... <= an’ \\
 Eingabe ist eine {\bfseries Instanz} des Sortierproblems. \\
@@ -90,7 +89,7 @@ Algorithmus ist {\bfseries korrekt}, wenn dieser das Problem für alle Instanzen
 \subsection{Vergleichbarkeiten von Algorithmen}
 \begin{itemize}
     \item Berechnungsaufwand: O(n)
-    \item Effizienz: Best Chase vs. Worst Chase vs. Average Case
+    \item Effizienz: Best Chase ($\Omega$) vs. Worst Chase ($O$) vs. Average Case ($\Theta$)
     \item Speicherbedarf: \begin{itemize}
         \item in-place: zusätzlicher Speicher, von der Eingabegröße Unabhängig,
         \item out-of-place: Speicherbedarf von der Eingabegröße abhängig
@@ -101,11 +100,11 @@ Algorithmus ist {\bfseries korrekt}, wenn dieser das Problem für alle Instanzen
 \subsection{Korrektheit}
 \begin{itemize}
     \item Schleifeninvarianten: Zu Beginn jeder Iteration der for-Schleife besteht die Teilfolge A[0..j-1] aus den Elementen der ursprünglichen Teilfolge A[0...j-1] enthaltenen Elementen, allerdings in sortierter Reihenfolge.
-    \item Schleifeninvariante muss 3 Dinge erfüllen
+    \item Die Schleifeninvariante muss 3 Dinge erfüllen
     \begin{itemize}
-        \item Initialisierung Invariante ist vor jeder Iteration wahr.
-        \item Fortsetzung Wenn die Invariante vor jeder Schleife wahr ist, dann bleibt sei auch bis zum Beginn der nächsten Iteration wahr.
-        \item Terminierung Wenn die Schleife abbricht, liefert uns die Invariante eine Eigenschaft, die uns hilft zu zeigen, dass der Algorithmus korrekt ist. 
+        \item {\bfseries Initialisierung:} Invariante ist vor jeder Iteration wahr.
+        \item {\bfseries Forsetzung:} Wenn die Invariante vor jeder Schleife wahr ist, dann bleibt sei auch bis zum Beginn der nächsten Iteration wahr.
+        \item {\bfseries Terminierung:} Wenn die Schleife abbricht, liefert uns die Invariante eine Eigenschaft, die uns hilft zu zeigen, dass der Algorithmus korrekt ist. 
     \end{itemize}
 \end{itemize}
 
@@ -138,7 +137,7 @@ Berücksichtigen nicht in Betrachtung
 Komplexitätsmessungen via Funktionsklassen \\
 
 
-\subsubsection{$\Theta$-Notation} 
+\subsubsection{$\Theta$-Notation (Average Laufzeit)} 
 Funktionen $f,g: \mathbb{N} \to \mathbb{R}_{>0}$\\
 $\mathbb{N}$ = Eingabelänge \\
 $\mathbb{R}$ = Zeit 
@@ -150,12 +149,10 @@ wobei:
     \item $\exists c_1,c_2\in\mathbb{R}_{>0},n_0\in\mathbb{N}$ = Positive Konstanten und $\forall n\geq n_0$
     \item $0\leq f(n) \leq c_2g(n)$ $f(n)$ wird von $c_1g(n)$ und $c_2g(n)$ für hinreichend große n eingeschlossen
 \end{itemize}
-\\
 Schreibweise: $f\in \Theta(g)$, manchmal auch $f= \Theta(g)$. \\
 $\Theta$-Notation beschränkt eine Funktion asymptotisch von {\bfseries oben} und {\bfseries unten}
-\\
 
-\subsubsection{$O$-Notation} 
+\subsubsection{$O$-Notation (Worst Case Laufzeit)} 
 Obere asymptotische Schranke\\
 $O(g) = \{ f : \exists c \in \mathbb{R}_{>0},n_0 \in \mathbb{N}, \forall n \geq n_0,0 \leq f(n) \leq cg(n) \} $
 wobei:
@@ -166,9 +163,8 @@ wobei:
 \end{itemize}
 Sprechweise: f wächst höchstens so schnell wie O(g)
 Schreibweise: $f = O(g)$
-\\
 
-\subsubsection{$\Omega$-Notation} 
+\subsubsection{$\Omega$-Notation (Best-Case Laufzeit)} 
 Untere asymptotische Schranke.\\
 $\Omega(g)={f: \exists c \in \mathbb{R}_{>0}, n_{0} \in \mathbb{N}, \forall n \geq n_{0},0 \leq cg(n) \leq f(n)}$ wobei:
 \begin{itemize}
@@ -202,22 +198,19 @@ $\Theta(n!)$     &  Faktoriell      &  Permutationen      \\
 \end{table}
 
 \subsubsection{$o$-Notation und $\omega$-Notation}
-nicht asymptotische scharfe Schranken
-\\
+nicht asymptotische scharfe Schranken, also < statt $\leq$.
 $o(g) = \{f : \forall c \in \mathbb{R}_{>0},\exists n_0,0 \le f(n) < cg(n)\}$
-\\
 Gilt für {\bfseries alle} Konstanten c>0. In $O$-Notation gilt es für eine Konstante c>0
-\\
 $\omega(g) = \{ f : \forall c \in \mathbb{R}_{>0},\exists n_0 \in \mathbb{N},\forall n \ge n_0,0\le cg(n) < f(n)\}$
 
 \subsection{Divide-and-Conquer}
 \begin{itemize}
-    \item[Idee] Zerlege das Problem und löse es direkt oder durch weitere Zerlegung.
-    \item[Divide] Teile das Problem in mehrere Teilprobleme auf, die kleinere Instanzen des gleichen Problems darstellen.
-    \item[Conquer] Beherrsche die Teilprobleme rekursiv. Wenn die Teilprobleme klein genug sind, dann löse die Teilprobleme auf direktem Weg.
-    \item[Combine] Vereinige die Lösungen der Teilprobleme zur Lösung des ursprünglichen Problems.
-\end{itemize}\\
-Für ein kleines Problem $n\le c$ (c = Konstante), dann braucht direkte Lösung $\Theta(1)$. Sonst gilt: Aufteilen in je $a$ Teilproblme der Größe $\frac{1}{b}$ des Ursprünglichen Problems. Für das lösen für a Teilprobleme der Größe $\frac{n}{b}$ ist $aT(\frac{n}{b})$. $D(n)$ ist die Zeit, die die Aufteilung braucht und C(n) die Zeit zum zusammenführen. Ist nicht $n\le c$, so ist die Laufzeit $aT(\frac{n}{b}) + D(n) + C(n)$.
+    \item Idee Zerlege das Problem und löse es direkt oder durch weitere Zerlegung.
+    \item Divide Teile das Problem in mehrere Teilprobleme auf, die kleinere Instanzen des gleichen Problems darstellen.
+    \item Conquer Beherrsche die Teilprobleme rekursiv. Wenn die Teilprobleme klein genug sind, dann löse die Teilprobleme auf direktem Weg.
+    \item Combine Vereinige die Lösungen der Teilprobleme zur Lösung des ursprünglichen Problems.
+\end{itemize}
+Für ein kleines Problem $n\le c$ (c = Konstante)braucht direkte Lösung $\Theta(1)$. Sonst gilt: Aufteilen in je $a$ Teilproblme der Größe $\frac{1}{b}$ des Ursprünglichen Problems. Für das lösen für a Teilprobleme der Größe $\frac{n}{b}$ ist $aT(\frac{n}{b})$. $D(n)$ ist die Zeit, die die Aufteilung braucht und C(n) die Zeit zum zusammenführen gilt nicht $n\le c$, so ist die Laufzeit $aT(\frac{n}{b}) + D(n) + C(n)$.
 
 \subsection{Lösung von Rekusionsgleichungen}
 
@@ -231,7 +224,7 @@ Jeder Knoten stellt ein Teilproblem da. Die Wurzel stellen die analysierenden Ko
 liefert Schranken für Rekursionsgleichungen der Form $T(n) = aT(\frac{n}{b})+f(n)$ mit $a\ge 1. b>1$ und $f(n)$ eine asymptotisch positive Funktion. in  je $a$ Teilproblme der Größe $\frac{1}{b}$ des Ursprünglichen Problems. Das lösen dauert für a Teilprobleme der Größe $\frac{n}{b}$ und $f(n)$ stellt dann die gesamten Kosten zum lösen dar.
 
 \subsubsection{Mastertheorem}
-$a\ge 1$ und $b>1$ sind Konstanten. Sei f(n) eine positive Funktion und T(n) für alle $\ge0$ $T(n) = aT(\frac{n}{b}) + f(n)$, obwohl wir $\frac{n}{b}$ so interpretieren, dass damit entweder $\lfloor{\frac{n}{b}}\rfloor$ oder $\lceil{\frac{n}{b}}\rceil$ gemeint ist, Dann hat T(n) die folgenden Schranken:
+$a\ge 1$ und $b>1$ sind Konstanten. Sei f(n) eine positive Funktion und T(n) für alle $\ge0$ $T(n) = aT(\frac{n}{b}) + f(n)$, obwohl wir $\frac{n}{b}$ so interpretieren, dass damit entweder $\lfloor{\frac{n}{b}}\rfloor$ oder $\lceil{\frac{n}{b}}\rceil$ gemeint ist, dann hat T(n) die folgenden Schranken:
 \begin{itemize}
     \item Gilt $f(n) = O(n^{\log_b{a-\in}} )$ für eine Konstante $\in > 0$, dann $T(n) = \Theta(n^{\log_b{a}})$.
     \item Gilt $f(n) = \Theta(n^{\log_b{a}})$, dann gilt $T(n) = \Theta(n^{\log_b{a}}lg n)$.
@@ -256,7 +249,7 @@ inkrementelle Herangehensweise.
 Pseudo Code des Insertion Sort Algorithmus
 {\ttfamily
 \begin{lstlisting}[language=Java]
-Array Insertion-Sort(A){
+Array Insertion-Sort(A)
 1 for j=1 TO A.length-1
 2    key = A[j]
 3    i=j-1
@@ -269,12 +262,12 @@ Array Insertion-Sort(A){
 
 \subsubsection{Korrektheit von Insertion Sort}
 \begin{itemize}
-    \item Initialisierung Beginn mit j=1, Teilfeld A[0 ... j-1] besteht nur aus A[0], dieses Element ist sortiert.
-    \item Fortsetzung Die For-Schleife sorgt dafür, dass die Elemente A[j-1],A[j-2],... um je eine Stelle nach rechts verschoben werben, bis A[j] an der korrekten Stelle steht. Das Teilfeld A[0..j] besteht aus ursprünglichen Elementen und ist sortiert. Die Inkrementation von j erhält die Invariante.
-    \item Terminierung Abbruchbedingung for-Schleife, wenn {\itshape j>A.length-1}. Jede Iteration erhöht j. Dann bei Abbruch ist {\itshape j=n} und einsetzten in Invariante liefert das Teilfeld {\itshape A[0...n-1]} welches aus den ursprünglichen Elementen besteht und sortiert ist. Teilfeld ist gesamtes Feld.
+    \item Initialisierung: Beginn mit j=1, Teilfeld A[0 ... j-1] besteht nur aus A[0], dieses Element ist sortiert.
+    \item Fortsetzung: Die For-Schleife sorgt dafür, dass die Elemente A[j-1],A[j-2],... um je eine Stelle nach rechts verschoben werben, bis A[j] an der korrekten Stelle steht. Das Teilfeld A[0..j] besteht aus ursprünglichen Elementen und ist sortiert. Die Inkrementation von j erhält die Invariante.
+    \item Terminierung: Abbruchbedingung for-Schleife, wenn {\itshape j>A.length-1}. Jede Iteration erhöht j. Dann bei Abbruch ist {\itshape j=n} und einsetzten in Invariante liefert das Teilfeld {\itshape A[0...n-1]} welches aus den ursprünglichen Elementen besteht und sortiert ist. Teilfeld ist gesamtes Feld.
 \end{itemize}
 
-Der Algorithmus arbeitet korrekt
+Der Algorithmus arbeitet korrekt (siehe Tabelle)
 \begin{table}[h]
 \centering
 \begin{tabular}{|l|l|l|}
@@ -295,7 +288,7 @@ Zeile & Kosten & Anzahl  \\
 
 
    
-\subsubsection{Laufzeit} T(n) ist die Summe aus allen Zeilen Kosten, also 
+\subsubsection{Laufzeit ($O(n^2)$)} T(n) ist die Summe aus allen Zeilen Kosten, also 
     \[T(n)=c_{1}n+c_2(n-1)+c_4(n-1)+c_5\sum\limits_{j=1}^{n-1}t_j+\]\[c_6\sum\limits_{j=1}^{n-1}(t_j-1)+c_7\sum\limits_{j=1}^{n-1}(t_j-1)+c_8(n-1)\]
     
     
@@ -319,7 +312,7 @@ BUBBLE-SORT(A)
 4           SWAP(A[j],A[j-1])
 \end{lstlisting}
 
-\subsubsection{Laufzeit}
+\subsubsection{Laufzeit ($\Omega = O = n^2$)}
  Worst Case und Best Case Laufzeiten sind identisch, da stets alle Elemente der Teilfolge miteinander verglichen werden,
  Anzahl der Vertauschungen sind im Best case 0 und im Worst case $\frac{n^2-n}{2}$
 
@@ -355,11 +348,11 @@ Da wir höchstens n Grundschritte für das Vermischen ausführen, liegt die ben�
 \subsubsection{Korrektheit}
 \begin{itemize}
 \item {\bfseries Schleifeninvariante} Zu Beginn jeder Iteration der for-Schleife (Zeile 12-17) enthält das Teilfeld A[p..k-1] die k - p kleinsten Elemente aus L[0..n1] B und R[0..n2] in sortierter Reihenfolge. Weiter sind L[i] und R[j] die kleinsten Elemente ihrer Arrays, die noch nicht zurück kopiert wurden. 
-\item {\bfseries Initialisierung} Vor der ersten Iteration gilt k = p. Daher ist A[p..k−1] leer und enthält 0 kleinste Elemente von L und R. Wegen i = j = 0 sind L[i] und R[j] die kleinsten Elemente ihrer Arrays, die noch nicht zurück kopiert wurde.
+\item {\bfseries Initialisierung} Vor der ersten Iteration gilt k = p. Daher ist A[p..$k-1$] leer und enthält 0 kleinste Elemente von L und R. Wegen i = j = 0 sind L[i] und R[j] die kleinsten Elemente ihrer Arrays, die noch nicht zurück kopiert wurde.
 \item {\bfseries Fortsetzung} Müssen zeigen, dass Schleifeninvariante erhalten bleibt. Dafür nehmen
 wir an, dass L[i] $\le$ R[j] . Dann ist L[i] kleinstes Element, welches noch nicht zurück
-kopiert wurde. Da Array A[p..k−1] die k−p kleinsten Elemente enthält, wird der
-Array A[p..k] die k−p+1 kleinsten Elemente enthalten nachdem der Wert nach der
+kopiert wurde. Da Array A[$p..k-1$] die $k-p$ kleinsten Elemente enthält, wird der
+Array A[p..k] die $k-p+1$ kleinsten Elemente enthalten nachdem der Wert nach der
 Durchführung von Zeile 14 kopiert wurde. Nach Erhöhung der Variablen k und i stellt
 die Schleifeninvariante für die nächste Iteration wieder her.
 Wenn L[i] > R[j] dann analoges Argument mit Zeilen 16-17.
@@ -383,7 +376,7 @@ Der Pseudo Code des Algorithmus
 QUICKSORT(A,p,r)
 1   if p<r
 2       q = PARTION(A,p,r)
-3       QUICKSORT(A,p,q−1)
+3       QUICKSORT(A,p,q-1)
 4       QUICKSORT(A,q+1,r)
 \end{lstlisting}
 und der Partition Code
@@ -400,7 +393,7 @@ PARTITION(A,p,r)
 \end{lstlisting}
 
 \subsubsection{Laufzeit}
-Laufzeit von PARTION auf dem Teilarray beträgt $\Theta(n)$ mit n=r−p+1. Die Laufzeit hängt von der balance der Teilarrays ab. Sind sie balanciert, so läuft der Quicksort so schnell wie Merge Sort, sind sie es nicht, ist er so langsam wie Insertion-Sort. Insgesamt gilt im Worst Case $T(n)=\Theta(n^2)$. Im Best Case kostet die Zerlegung $=(n lg n)$
+Laufzeit von PARTION auf dem Teilarray beträgt $\Theta(n)$ mit n=r-p+1. Die Laufzeit hängt von der balance der Teilarrays ab. Sind sie balanciert, so läuft der Quicksort so schnell wie Merge Sort, sind sie es nicht, ist er so langsam wie Insertion-Sort. Insgesamt gilt im Worst Case $T(n)=\Theta(n^2)$. Im Best Case kostet die Zerlegung $=(n lg n)$
 
 \subsubsection{Korrektheit}
 Zu Beginn jeder Iteration der for-Schelife gillt für Arrayindex k 1. Ist $p\le k \le i$, so gilt $A[k]\le x$. 2. Ist $i+1\le k \le j-1$, so gilt $A[k]>x$. 3. Ist $k=r$, so gilt $A[k]=x$.\\
@@ -412,7 +405,7 @@ Durch Zeile 4 ergibt sich entweder A[j]>x, dann inkrementiert die Schleife nur d
 \end{itemize}
 
 \subsubsection{Randomized QS}
-Will man Quicksort zufällig laufen lassen, gilt
+Will man Quicksort zufällig laufen lassen, man wählt also das Pivot Element zufällig, gilt:
 
 \begin{lstlisting}[language=java]
 RANDOMIZED-PARTION(A,p,r)
@@ -425,7 +418,7 @@ RANDOMIZED-PARTION(A,p,r)
 RANDOMIZED-QUICKSORT(A,p,r)
 1   if p<r
 2       q = RANDOMIZED-PARTION(A,p,r)
-3       RANDOMIZED-QUICKSORT(A,p,q−1)
+3       RANDOMIZED-QUICKSORT(A,p,q-1)
 4       RANDOMIZED-QUICKSORT(A,q+1,r)
 \end{lstlisting}
 
@@ -443,19 +436,18 @@ Datenstrukturen ist näher an der Maschine und besagt {\bfseries wie} es realisi
 \\
 Bsp.: Stack-Operationen als Array oder verkettete Liste
 \subsection{Stack}
-Stacks werden nach dem LIFO Prinzip realisiert
+Stacks werden nach dem LIFO\footnote{Last in, first out} Prinzip realisiert
 \\
 \subsubsection{Laufzeiten}
-\\
 Push    $\Theta$(1)| Pop     $\Theta$(1)
 \subsubsection{Realisierungen}
 \begin{itemize}
 \item {\bfseries Als Array:}
-Annahme: maximale Größe das der Stack haben darf ist bekannt
+{\bfseries Annahme:} maximale Größe das der Stack haben darf ist bekannt
 \\
-Prinzip: Der Stack besitzt einen Pointer als Attribut der immer auf das oberste Element zeigt. Wird dem Stack etwas gepusht oder gepopt zeigt es auf das neue Element bzw. das Element das noch auf dem Stack liegt. 
+{\bfseries Prinzip:} Der Stack besitzt einen Pointer als Attribut der immer auf das oberste Element zeigt. Wird dem Stack etwas gepusht oder gepopt zeigt es auf das neue Element bzw. das Element das noch auf dem Stack liegt. 
 \\
-Optimierungsideen: Wird die Annahme verletzt, also das Array wird überfüllt, muss in ein größeres Array überführt werden oder auf viele andere Arrays verteilt werden(verkette Listen)
+{\bfseries Optimierungsideen:} Wird die Annahme verletzt, also das Array wird überfüllt, muss in ein größeres Array überführt werden oder auf viele andere Arrays verteilt werden(verkette Listen)
 Wenn in ein größeres Array überführt wird, kostet dies Zeit, da man keinen unendlichen Speicher hat. Es muss also entschieden werden wie groß das Array werden soll mit einer {\bfseries RESIZE} Methode, der Standard ist das Doppelte der jetzigen Größe. \\
 {\bfseries Methoden:} 
 \begin{lstlisting}[language=java]
@@ -465,7 +457,7 @@ new(S)
 
 pop(S)
 1   if isEmpty(S) THEN
-2       error ‘underflow‘
+2       error underflow
 3   else 
 4       S.top=S.top-1;
 5   return S.A[S.top+1];
@@ -478,7 +470,7 @@ isEmpty(S)
 
 push(S,x)
 1   if S.top==MAX-1  
-2       error‘overflow‘
+2       error overflow
 3   else 
 4       S.top=S.top+1;
 5       S.A[S.top]=x;
@@ -492,7 +484,7 @@ new(S)
 
 pop(S)
 1   if isEmpty(S) 
-2       error‘underflow‘
+2       error underflow
 3   else
 4       S.top=S.top-1;
 5       if 4*(S.top+1)==S.memsize 
@@ -508,7 +500,7 @@ push(S,x)
 5       RESIZE(S.A[],S.memsize);
 \end{lstlisting}
 \item {\bfseries Als verkettete Liste:}
-Prinzip: Der Head ist hierbei der Pointer. Doppelt verkette Listen werden benutzt. Jeder Eintrag besteht aus dem Wert(key), dem Vorgänger(prev) und Nachfolger(next).Die verkettete Liste kann auch auf einem Array realisiert werden. Implementierung mittels Wächter zur Vereinfachung (NIL). Beim Löschen darauf achten das Vorgänger des zu löschendem Element auch wieder verknüpft wird, sowie der Head richtig gesetzt wird. Gleiches beim Einfügen mit dem neuem Element.
+Prinzip: Der Head ist hierbei der Pointer. Doppelt verkette Listen werden benutzt. Jeder Eintrag besteht aus dem Wert(key), dem Vorgänger(prev) und Nachfolger(next). Die verkettete Liste kann auch auf einem Array realisiert werden. Implementierung mittels Wächter zur Vereinfachung (NIL). Beim Löschen darauf achten das Vorgänger des zu löschendem Element auch wieder verknüpft wird, sowie der Head richtig gesetzt wird. Gleiches beim Einfügen mit dem neuem Element.
 
 \end{itemize}
 
@@ -524,7 +516,7 @@ Grundauf Implementierung wobei die Objekte auf ihren Wert(key), Vorgänger und N
 {\bfseries Methoden:} 
 \begin{lstlisting}[language=java]
 search(L,k)   
-//returns pointer to k in L (o rnil)
+//returns pointer to k in L (or nil)
 1   current=L.head;
 2   while current!=nil & current.key!=k 
 3       current=current.next;
@@ -547,7 +539,7 @@ delete(L,x)
 5   if x.next!= nilTHEN
 6       x.next.prev=x.prev;
 
-Vereinfachung mit Wächter
+Vereinfachung mit Waechter
 deleteSent(L,x) 
 // deletes x from L with sentinel
 1   x.prev.next=x.next;
@@ -572,15 +564,15 @@ key & prev & next & key & prev & next & key & prev & next  \\
 \end{table}
 \end{itemize}
 \subsection{Abstrakter Datentyp Queue}
-Arbeitet nach dem FIFO Prinzip. Elemente die eingefügt(enqueue) werden kommen nach hinten und nur das Element ganz vorne kann entfernt werden(dequeue). Um dies zu realisieren muss man den Anfang und das Ende der Struktur kennen (Q.front und Q.end). \\
+Arbeitet nach dem FIFO\footnote{First in, first out} Prinzip. Elemente die eingefügt(enqueue) werden kommen nach hinten und nur das Element ganz vorne kann entfernt werden(dequeue). Um dies zu realisieren muss man den Anfang und das Ende der Struktur kennen (Q.front und Q.end). \\
 \subsubsection{Laufzeiten}
 Enqueue    $\Theta$(1)| Dequeue $\Theta$(1) \\
 \subsubsection{Realisierungen}
 \begin{itemize}
-\item {\bfseries Als \dq virtuelles\dq  zyklisches Array:} \\
+\item {\bfseries Als virtuelles zyklisches Array:} \\
 Problematisierung: Die Grenzen des Arrays(Anfang und Ende) könnten erreicht werden, 
 deswegen wird es als zyklisches Array dargestellt. \\
-Prinzip: Wenn man am Ende des Arrays ist, springt man wieder zum Anfang und vice versa. Q.front wandert zyklisch nach rechts(Index erhöht sich außer beim Anfang/Ende) beim dequeue und Q.rear beim enqueue. \\
+Prinzip: Wenn man am Ende des Arrays ist, springt man wieder zum Anfang und umgekehrt. Q.front wandert zyklisch nach rechts(Index erhöht sich außer beim Anfang/Ende) beim dequeue und Q.rear beim enqueue. \\
 Optimierungsidee: Dabei gibt es aber ein Problem, da es keine Unterscheidung gibt ob die Schlange leer ist oder voll, weswegen wir den Zustand abspeichern müssen oder ein Element als Abstandhalter verwenden. \\
 {\bfseries Methoden:} 
 \begin{lstlisting}[language=java]
@@ -595,7 +587,7 @@ isEmpty(Q)
 
 dequeue(Q)
 1   if isEmpty(Q) THEN
-2       error‘underflow‘
+2       error underflow
 3   else 
 4       Q.front=Q.front+1 modMAX;
 5   if Q.front==Q.rearTHEN
@@ -604,7 +596,7 @@ dequeue(Q)
 
 enqueue(Q,x)
 1   if Q.rear==Q.front & !Q.empty
-2       error ‘overflow‘
+2       error overflow
 3   else 
 4       Q.A[Q.rear]=x;
 5       Q.rear=Q.rear+1 modMAX;
@@ -648,12 +640,12 @@ Binär Bäume besitzen Knoten, diese Zeigten auf 0 bis 2 Nachfolger-Knoten, dies
 
 \subsubsection{Realisierung}
 \begin{itemize}
-    \item {\bfseries Als verkettet Liste} Jeder Knoten erhält einen Wert(key), sowie eine Array von Zeigern auf die Kinder(child[]). Zusätzlich kann ein Zeiger auf den Elternkonten verwendet werden(parent). Für nicht-leern Baum gibt es \#Knoten-1 viele Einträge {\bfseries $\neq$ nil} über alle Listen child[].
+    \item {\bfseries Als verkettete Liste} Jeder Knoten erhält einen Wert(key), sowie eine Array von Zeigern auf die Kinder(child[]). Zusätzlich kann ein Zeiger auf den Elternkonten verwendet werden(parent). Für nicht-leern Baum gibt es \#Knoten-1 viele Einträge {\bfseries $\neq$ nil} über alle Listen child[].
     \item {\bfseries Als (ungerichteter) Graph}
 \end{itemize}
 
 \subsubsection{Inorder-Traversieren}
-Inorder-Traversieren gibt einen Binär Baum in aufsteigender Reihenfolge aus.
+Inorder-Traversieren\footnote{durchkreuzen} gibt einen Binär Baum in aufsteigender Reihenfolge aus.
 \begin{itemize}
     \item 
     \begin{lstlisting} [language=java]
@@ -679,10 +671,10 @@ INORDER(x)
     \item {\bfseries Postorder}
     Postorder für Löschung. Postorder geht erst in die Teilbäume und löscht diese. Dannach erst betrachtet Postorder die Knoten und löscht diesen. Zeiger auf rechten Teilbaum noch vorhanden, wenn linker bereits gelöscht wurde.
     \begin{lstlisting}{language=java}
-     Preorder(x)
+     Postorder(x)
     1 if x != nil then
-    2   preorder(x.left)
-    3   preorder(x.right)
+    2   postorder(x.left)
+    3   postorder(x.right)
     4   print x.key
     \end{lstlisting}
     
@@ -701,7 +693,7 @@ search(x,k)
 5 return search(x.right,k);
         \end{lstlisting}
         Wobei x den aktuellen Knoten und k den gesuchten Wert beschreibt.
-        \item {\bfseries Laufzeit} Die Laufzeit liegt in $\Theta(n)$, da jeder Knoten maximal einmal besucht wird, dies gilt auf für den Worst Case 
+        \item {\bfseries Laufzeit} Die Laufzeit liegt in $\Theta(n)$, da jeder Knoten maximal einmal besucht wird, dies gilt auch für den Worst Case 
     \end{itemize}
     \subsubsection{Einfügen}
     \begin{itemize}
@@ -815,7 +807,7 @@ delete(T,z)
 5       transplant(T,z,z.left)
 6   else
 7       y=z.right;
-8       while y.left != nil
+8       while y.left != nil DO
             y=y.left;
 9       if y.parent != z THEN
 10          transplant(T,y,y.right);
@@ -909,28 +901,28 @@ fixColorsAfterInsertion(T,z)
 \subsubsection{Laufzeiten} Die Laufzeit beträgt $O(h) = O(log n)$. Das ist auch die Laufzeit für das löschen. Im Worst Case sind die Laufzeiten für Einfügen, Löschen und Suchen $\Theta(log n)$
 \subsubsection{Löschen}
 \begin{lstlisting}[language=java]
-delete(TreeNode toDelete) {
+delete(TreeNode toDel) {
 1   TreeNode x = _nil;
-2   TreeNode y = toDelete;
-3   TreeNode.NodeColor y_original_color = y.color;
-4   if( toDelete.left == _nil ) {
-5   	x = toDelete.right;
-6   	transplant(toDelete, toDelete.right);
-7   } else if( toDelete.right == _nil ) {
-8   	x = toDelete.left;
-9   	transplant(toDelete, toDelete.left);
+2   TreeNode y = toDel;
+3   TN.NodeColor y_orig_color = y.color;
+4   if( toDel.left == _nil ) {
+5   	x = toDel.right;
+6   	transplant(toDel, toDel.right);
+7   } else if( toDel.right == _nil ) {
+8   	x = toDel.left;
+9   	transplant(toDel, toDel.left);
 10  } else {
-11  	y = minimumSubtree(toDelete.right);
-12  	y_original_color = y.color;
+11  	y = minimumSubtree(toDelright);
+12  	y_orig_color = y.color;
 13  	x = y.right;
-14  	if( y.p == toDelete ) {
+14  	if( y.p == toDel ) {
 15  		x.p = y;
 16  	} else {
 17  		transplant(y, y.right);
-18  		y.right = toDelete.right;
+18  		y.right = toDel.right;
 19  		y.right.p = y;
 20  	}
-21  	transplant(toDelete, y);
+21  	transplant(toDel, y);
 22  	y.left = toDelete.left;
 23  	y.left.p = y;
 24  	y.color = toDelete.color;
@@ -942,7 +934,8 @@ delete(TreeNode toDelete) {
 \end{lstlisting}
 \begin{lstlisting}[language=java]
 delete_fixup(TreeNode x) {
-1 while( x!=_root && x.color == BLACK ) {
+1 while( x!=_root && 
+  x.color == BLACK ) {
 2  if( x == x.p.left ) {
 3  TreeNode w = x.p.right;
 4   if( w.color == RED ) {
@@ -977,7 +970,7 @@ delete_fixup(TreeNode x) {
 33    w = x.p.left;
 34   }
 35   if( w.right.color == BLACK 
- && w.left.color == BLACK ) {
+     && w.left.color == BLACK ) {
 36    w.color = RED;
 37    x = x.p;
 38   } else {
@@ -1063,18 +1056,18 @@ Die unteren Methoden sind eine Zusammenfassung der Kombinationen von Zick und Za
 \begin{lstlisting}[language=java]
 splay(T,z)
 1   WHILE z != T.root DO
-2   IF z.parent.parent==nil THEN
+2   IF z.parent.parent==nil 
 3       zig(T,z);
 4   ELSE
 5       IF z==z.parent.parent.left.left 
         OR 
-        z==z.parent.parent.right.right THEN
+        z==z.parent.parent.right.right 
 6           zigZig(T,z);
 7       ELSE
 8           zigZag(T,z);
 
 zigZig(T,z)
-1   IF z==z.parent.left THEN
+1   IF z==z.parent.left 
 2       rotateRight(T,z.parent.parent);
 3       rotateRight(T,z.parent);
 4   ELSE
@@ -1082,7 +1075,7 @@ zigZig(T,z)
 6       rotateLeft(T,z.parent);
 
 /*Falls x das linke Kind seines Vaters 
-ist und keinen Großvater hat,
+ist und keinen Grossvater hat,
 und somit bereits direkt unter der Wurzel 
 steht,wird eine 
 zick-Rotation (Rechts-Rotation) 
@@ -1091,7 +1084,7 @@ des Baumes und die Splay-Operation
 beendet. Liegt x  im rechten 
 Teilbaum seines Vaters,
 wird analog eine zack-Rotation 
-(Links-Rotation) durchgeführt. */
+(Links-Rotation) durchgefuehrt. */
 zig(T,z)
 1   IF z==z.parent.left THEN
 2       rotateRight(T,z.parent);
@@ -1177,7 +1170,7 @@ Algorithmus beispielhaft für Max-Heap:
 \begin{lstlisting}[language=java]
 extract-max(H) //as unlimited Array
 1 if isEmpty(H) THEN
-2   return error ‘underflow‘
+2   return error underflow
 3 else
 4   max=H.A[0];
 5   H.A[0]=H.A[H.size-1];
@@ -1214,7 +1207,8 @@ Der Algorithmus besitzt eine Laufzeit von $O(n \cdot h) = O(n \cdot \log n)$
 Idee: Die Werte eines Arrays werden zu einem Heap.Die Werte des Heaps werden dann nach und nach entnommen und ausgegeben.
 Der Algorithmus beispielhaft für Max-Heaps:
 \begin{lstlisting}[language=java]
-heapSort(H.A) //Array A schon nach H.A kopiert
+heapSort(H.A) 
+//Array A schon nach H.A kopiert
 1 buildHeap(H.A);
 2 WHILE !isEmpty(H) DO 
 3   extract-max(H);
@@ -1246,7 +1240,7 @@ search(x,k)
 1 while x != nil DO
 2   i=0;
 3   while i < x.n &&
-x.key[i] < k DO i=i+1;
+    x.key[i] < k DO i=i+1;
 4   if i < x.n && x.key[i]==k THEN
 5       return (x,i);
 6   else
@@ -1264,153 +1258,113 @@ BTree insert(K key, V value) {
 3 }
 4 ++mSize;
 5 if (mRoot.mCurrentKeyNum ==
- BTNode.UPPER_BOUND_KEYNUM) {
-6   // The root is full, split it
-7   BTNode<K, V> btNode = createNode();
-8   btNode.mIsLeaf = false;
-9  btNode.mChildren[0] = mRoot;
-10  mRoot = btNode;
-11  splitNode(mRoot, 0,
-btNode.mChildren[0]);
-12 }
-13 insertKeyAtNode(mRoot, key, value);
-14 return this;
-16}
+  BTNode.UPPER_BOUND_KEYNUM) {
+6   BTNode<K, V> btNode = createNode();
+7   btNode.mIsLeaf = false;
+8   btNode.mChildren[0] = mRoot;
+9   mRoot = btNode;
+10  splitNode(mRoot, 0,
+    btNode.mChildren[0]);
+11 }
+12 insertKeyAtNode(mRoot, key, value);
+13 return this;
+14 }
 \end{lstlisting}
 \begin{lstlisting}
-insertKeyAtNode(BTNode rootNode, K key, V value)
+insertKeyAtNode(BTNode rootNode,
+K key, V value)
 1 {
 2 int i;
-3 int currentKeyNum = rootNode.mCurrentKeyNum;
+3 int currentKeyNum = 
+  rootNode.mCurrentKeyNum;
 4 if (rootNode.mIsLeaf) {
 5   if (rootNode.mCurrentKeyNum == 0) {
-6       // Empty root
-7       rootNode.mKeys[0] = 
-new BTKeyValue<K, V>(key, value);
-8       ++(rootNode.mCurrentKeyNum);
-9       return;
-10  }
-11 // Verify if the specified key 
-doesn't exist in the node
-12 for (i = 0; i < rootNode.mCurrentKeyNum; ++i)
-{
-13  if (key.compareTo(rootNode.mKeys[i].mKey)
-== 0) {
-14      // Find existing key, overwrite its
-value only
-15      rootNode.mKeys[i].mValue = value;
-16      --mSize;
-17      return;
-18  }
-19 }
-20 i = currentKeyNum - 1;
-21 BTKeyValue<K, V> existingKeyVal =
-rootNode.mKeys[i];
-22 while ((i > -1) &&
-(key.compareTo(existingKeyVal.mKey) 
-< 0)) {
-23  rootNode.mKeys[i + 1] = 
-existingKeyVal;
-24  --i;
-25  if (i > -1) {
-26      existingKeyVal =
-rootNode.mKeys[i];
-27  }
-28 }
-29 i = i + 1;
-30 rootNode.mKeys[i] = 
-new BTKeyValue<K, V>(key, value);
-31 ++(rootNode.mCurrentKeyNum);
-32 return;
-33 }
+6       rootNode.mKeys[0] = 
+        new BTKeyValue<K, V>(key, value);
+7       ++(rootNode.mCurrentKeyNum);
+8       return;
+9   }
+10 for (i = 0; i < 
+   rootNode.mCurrentKeyNum; ++i) {
+11  if (key.compareTo(rootNode.
+    mKeys[i].mKey) == 0) {
+12      rootNode.mKeys[i].mValue = value;
+13      --mSize;
+14      return;
+15  }
+16 }
+17 i = currentKeyNum - 1;
+18 BTKeyValue<K, V> existingKeyVal =
+   rootNode.mKeys[i];
+19 while ((i > -1) &&
+   (key.compareTo(existingKeyVal.mKey) 
+   < 0)) {
+20  rootNode.mKeys[i + 1] = 
+    existingKeyVal;
+21  --i;
+22  if (i > -1) {
+23      existingKeyVal =
+        rootNode.mKeys[i];
+24  }
+25 }
+26 i = i + 1;
+27 rootNode.mKeys[i] = 
+   new BTKeyValue<K, V>(key, value);
+28 ++(rootNode.mCurrentKeyNum);
+29 return;
+30 }
 \end{lstlisting}
 \begin{lstlisting}
 splitNode(BTNode parentNode, 
 int nodeIdx, BTNode btNode) {
 1 int i;
-
 2 BTNode<K, V> newNode = createNode();
 3 newNode.mIsLeaf = btNode.mIsLeaf;
-
-4 // Since the node is full,
-5 // new node must share
-LOWER_BOUND_KEYNUM 
-(aka t - 1) keys from the node
-6 newNode.mCurrentKeyNum =
-BTNode.LOWER_BOUND_KEYNUM;
-
-7 // Copy right half of the keys 
-from the 
-node to the new node
-8 for (i = 0; 
-i < BTNode.LOWER_BOUND_KEYNUM; ++i) {
-9   newNode.mKeys[i] = 
-btNode.mKeys[i + BTNode.MIN_DEGREE];
-10  btNode.mKeys[i +
-BTNode.MIN_DEGREE] = null;
-11 }
-
-12 // If the node is an internal node
-(not a leaf),
-13 // copy the its child pointers 
-at the half right as well
-14 if (!btNode.mIsLeaf) {
-15  for (i = 0; i < BTNode.MIN_DEGREE;
-++i) {
-16      newNode.mChildren[i] =
-btNode.mChildren[i +
-BTNode.MIN_DEGREE];
-17      btNode.mChildren[i +
-BTNode.MIN_DEGREE] =
-null;
-18  }
+4 newNode.mCurrentKeyNum =
+  BTNode.LOWER_BOUND_KEYNUM;
+5 for (i = 0; 
+  i < BTNode.LOWER_BOUND_KEYNUM; ++i) {
+6   newNode.mKeys[i] = 
+    btNode.mKeys[i + BTNode.MIN_DEGREE];
+7  btNode.mKeys[i +
+    BTNode.MIN_DEGREE] = null;
+8 }
+9  if (!btNode.mIsLeaf) {
+10  for (i = 0; i < BTNode.MIN_DEGREE;
+    ++i) {
+11      newNode.mChildren[i] =
+        btNode.mChildren[i +
+        BTNode.MIN_DEGREE];
+12      btNode.mChildren[i +
+        BTNode.MIN_DEGREE] =
+        null;
+13  }
+14 }
+15 btNode.mCurrentKeyNum =
+   BTNode.LOWER_BOUND_KEYNUM;
+16 for (i = parentNode.mCurrentKeyNum;
+   i > nodeIdx; --i) {
+17  parentNode.mChildren[i + 1] =
+    parentNode.mChildren[i];
+18  parentNode.mChildren[i] = null;
 19 }
-
-
-20 // The node at this point should
-have LOWER_BOUND_KEYNUM 
-(aka min degree - 1) keys at
-this point.
-21 // We will move its right-most key
-to its parent node later.
-22 btNode.mCurrentKeyNum =
-BTNode.LOWER_BOUND_KEYNUM;
-
-23 // Do the right shift for r
-elevant child pointers of the 
-parent node
-24 // so that we can put the new 
-node as its new child pointer
-25 for (i = parentNode.mCurrentKeyNum;
-i > nodeIdx; --i) {
-26  parentNode.mChildren[i + 1] =
-parentNode.mChildren[i];
-27  parentNode.mChildren[i] = null;
+20 parentNode.mChildren[nodeIdx + 1] =
+   newNode;
+21 for (i = 
+   parentNode.mCurrentKeyNum - 1;
+   i >= nodeIdx; --i) {
+22  parentNode.mKeys[i + 1] =
+    parentNode.mKeys[i];
+23  parentNode.mKeys[i] = null;
+24 }
+25 parentNode.mKeys[nodeIdx] =
+   btNode.mKeys[
+   BTNode.LOWER_BOUND_KEYNUM];
+26 btNode.mKeys[
+   BTNode.LOWER_BOUND_KEYNUM] =
+   null;
+27 ++(parentNode.mCurrentKeyNum);
 28 }
-29 parentNode.mChildren[nodeIdx + 1] =
-newNode;
-
-30 // Do the right shift all the keys
-of the parent node the right side of
-the node index as well
-31 // so that we will have a slot for 
-move a median key from the 
-splitted node
-32 for (i = 
-parentNode.mCurrentKeyNum - 1;
-i >= nodeIdx; --i) {
-33  parentNode.mKeys[i + 1] =
-parentNode.mKeys[i];
-34  parentNode.mKeys[i] = null;
-35 }
-36 parentNode.mKeys[nodeIdx] =
-btNode.mKeys[
-BTNode.LOWER_BOUND_KEYNUM];
-37 btNode.mKeys[
-BTNode.LOWER_BOUND_KEYNUM] =
-null;
-38 ++(parentNode.mCurrentKeyNum);
-}
 \end{lstlisting}
 Das Einfügen eines Wertes kann eine maximale Laufzeit von $O(t \cdot h) = O(\log_t n)$ haben.
 
@@ -1421,8 +1375,8 @@ Informeller Algorithmus:
 delete(T,k)
 1 Wenn Wurzel nur 1 Wert und beide Kinder
 t-1 Werte, verschmelze Wurzel 
-und Kinder (reduziert Höhe um 1)
-2 Suche rekursiv Löschposition:
+und Kinder (reduziert Hoehe um 1)
+2 Suche rekursiv Loeschposition:
 3   Wenn zu besuchendes Kind nur t-1 Werte,
 verschmelze es oder rotiere/verschiebe
 4 Entferne Wert k in inneren Knoten/Blatt
@@ -1639,7 +1593,7 @@ Subgraphen müssen von der gleichen Art ihrer Graphen sein, sie sind also Teilgr
 \subsection{(Endliche) Gerichtete Graphen}
 Ein (endlicher) gerichteter Graph G=(V,E) besteht aus \\
 (1) einer (endlichen) Knotenmenge V(„vertices“) \\
-(2) einer (endlichen) Kantenmenge E$\subseteg$V×V(„edges“) \\
+(2) einer (endlichen) Kantenmenge $E \subseteq V\*V$ (edges) \\
 (3) Zyklen sind möglich z.B 1,5,6,2,1 \\
 (4) Schleifen sind möglich sowie isolierte Knoten(Knoten ohne Kanten) \\
 (5) Es gibt keine Mehrfachkanten zwischen Knoten
@@ -1647,7 +1601,7 @@ Ein (endlicher) gerichteter Graph G=(V,E) besteht aus \\
 \subsection{Ungerichteter Graph}
 Ein (endlicher) ungerichteter Graph G=(V,E) \\
 (1) einer (endlichen) Knotenmenge V(„vertices“) \\
-(2) einer (endlichen) Kantenmenge E$\subseteg$V×V(„edges“) {\bfseries so dass (u,v)∈E dasselbe ist wie (v,u)},
+(2) einer (endlichen) Kantenmenge $E \subseteq V*V$(„edges“) {\bfseries so dass (u,v) $\in$ E dasselbe ist wie (v,u)},
 alternativ {u,v}\\
 (3) ist zusammenhängend wenn jeder Knoten von jedem anderem Knoten aus erreichbar ist.
 \subsection{Darstellung}
@@ -1664,9 +1618,9 @@ Die Idee dahinter ist dass man zuerst die umliegenden Nachbarn eines Knoten absu
 \begin{lstlisting}[language=java]
 
 BFS(G,s) //G=(V,E), s=source node in V
-//WHITE =Knoten noch nicht besucht
-//GRAY =in Queue fuer naechsten Schritt
-//BLACK =fertig
+//WHITE = Knoten noch nicht besucht
+//GRAY = in Queue fuer naechsten Schritt
+//BLACK = fertig
 1   FOREACH u in V-{s} DO
 2       u.color=WHITE; 
         u.dist=INT.MAX; u.pred=NIL;
@@ -1676,7 +1630,6 @@ BFS(G,s) //G=(V,E), s=source node in V
 6   WHILE !isEmpty(Q) DO
 7       u=dequeue(Q);
 8       FOREACH v in adj(G,u) DO 
-//adj(G,u) gibt alle Nachbarknoten von u
 9           IF v.color==WHITE THEN
 10              v.color=GRAY; 
                 v.dist=u.dist+1;
@@ -1759,7 +1712,8 @@ Topologisches Sortieren ist nur für gerichtete Graphen ohne Zyklen(auch \dq dag
 \begin{lstlisting}[language=java]
 TOPOLOGICAL-SORT(G) // G=(V,E) dag
 1   newLinkedList(L);
-2   runDFS(G) but, eachtime a nodeisfinished,insertin front ofL 
+2   runDFS(G) // but, eachtime a node 
+    is finished, insert in front of L 
 3   returnL.head
 \end{lstlisting}
 Laufzeit= $O$(|V|+|E|)\\
