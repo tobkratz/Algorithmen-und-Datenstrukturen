@@ -18,12 +18,10 @@ Tested with **[GitHub action]**
 
  ---
 
-[toc]
-
 ## About The Project
 
 <p align="center">
-  <img src="res/Vorschau.gif" alt="Vorschu">
+  <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/vorschau.gif" alt="Vorschu">
 </p>
 
 ---
