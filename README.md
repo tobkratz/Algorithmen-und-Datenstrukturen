@@ -21,13 +21,23 @@ Tested with **[GitHub action]**
 ## About The Project
 
 <p align="center">
-  <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/vorschau.gif" alt="Vorschu">
+  <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/vorschau.gif" alt="Vorschu" width="600" >
 </p>
 
 ---
 
 Ein mit $\LaTeX$ geschriebenes Merkblatt rund um die Thematik Alogrithmen und Datenstrukturen. 
 Basierend auf der Vorlesung `Algorithmen und Datenstrukturen` an der Teschnichen Universität Darmstadt im Sommersemester 2019.
+
+Zusätzlich gibt es noch handschriftliche Ergänzungen, die ich noch zusätzliche nutze. Das fertige PDF ist als `append.pdf` zu finden. Vorschau gibt es hier:
+<details>
+<summary>#ExpandME</summary><br/>
+
+  <p align="center">
+  <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/draw-preview.gif" alt="Vorschu" width="600" >
+</p>
+</details>
+
 
 ### Inhaltsverzeichnis
 
@@ -192,6 +202,10 @@ git clone https://github.com/tklitschi/Algorithmen-und-Datenstrukturen.git
 2. compile 
 ```
 pdflatex Algorithmen-und-Datenstrukturen/main.tex
+```
+3. append drawings
+```
+pdfunite main.pdf append.pdf aud.pdf
 ```
 
 ## Contributing
