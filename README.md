@@ -1,5 +1,4 @@
 <h1 align="center">
-
   Algorithmen und Datenstrukturen
   <br>
 </h1>
@@ -21,7 +20,7 @@ Tested with **[GitHub action]**
 ## About The Project
 
 <p align="center">
-  <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/vorschau.gif" alt="Vorschu" width="600" >
+  <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/main.png" alt="Vorschu" width="600" >
 </p>
 
 ---
@@ -34,8 +33,11 @@ Zusätzlich gibt es noch handschriftliche Ergänzungen, die ich noch zusätzlich
 <summary>#ExpandME</summary><br/>
 
   <p align="center">
-  <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/draw-preview.gif" alt="Vorschu" width="600" >
-</p>
+    <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/append-1.png" alt="Vorschu" width="600" >
+  </p>
+  <p align="center">
+    <img src="https://github.com/tklitschi/Algorithmen-und-Datenstrukturen/blob/master/res/append-2.png" alt="Vorschu" width="600" >
+  </p>
 </details>
 
 
