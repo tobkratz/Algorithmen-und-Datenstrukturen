@@ -25,8 +25,8 @@ Tested with **[GitHub action]**
 
 ---
 
-Ein mit $\LaTeX$ geschriebenes Merkblatt rund um die Thematik Alogrithmen und Datenstrukturen. 
-Basierend auf der Vorlesung `Algorithmen und Datenstrukturen` an der Teschnichen Universität Darmstadt im Sommersemester 2019.
+Ein mit $\LaTeX$ geschriebenes Merkblatt rund um die Thematik Alogrithmen und Datenstrukturen.
+Basierend auf der Vorlesung `Algorithmen und Datenstrukturen` an der Technischen Universität Darmstadt im Sommersemester 2019.
 
 Zusätzlich gibt es noch handschriftliche Ergänzungen, die ich noch zusätzliche nutze. Das fertige PDF ist als `append.pdf` zu finden. Vorschau gibt es hier:
 <details>
@@ -193,15 +193,15 @@ Zusätzlich gibt es noch handschriftliche Ergänzungen, die ich noch zusätzlich
 </details>
 
 
-## Getting Started 
-Das Merkblatt lässt sich mit den in $\LaTeX$ enthaltenden Standartklassen zu kompillieren. 
+## Getting Started
+Das Merkblatt lässt sich mit den in $\LaTeX$ enthaltenden Standartklassen zu kompillieren.
 
 ### Installation
 1. Clone dieses Repository
 ```
 git clone https://github.com/tklitschi/Algorithmen-und-Datenstrukturen.git
 ```
-2. compile 
+2. compile
 ```
 pdflatex Algorithmen-und-Datenstrukturen/main.tex
 ```
@@ -223,4 +223,3 @@ Contributions sind ein fundamental für Open Source Projekte, also feel free to 
 ## Contact
 
 Tobias Kratz - [@tlitschi](https://twitter.com/tlitschi) - litsch@darmstadt.ccc.de
-
